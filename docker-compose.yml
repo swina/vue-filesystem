@@ -1,0 +1,9 @@
+services:
+  app:
+    image: vue3-filesystem
+    build: .
+    container_name: vue3-filesystem
+    volumes: 
+      - .:/app
+    ports:
+      - "3000:3000"
